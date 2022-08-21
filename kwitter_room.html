@@ -1,0 +1,30 @@
+<html>
+    <head><title>lets-chat-web-app</title></head>
+<body>
+    <div class="container">
+        <label>welcome</label><label id="user_name_label"></label>
+    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout();">Logout</button>
+        <center>
+            <h1 class="header">	
+                lets chat!
+            </h1>
+            <h3 id="user_name" class="color_white"></h3>
+            <div class="form-group input_div_room_page">
+                <label>Add Room:</label>
+                <input type="text" id="room_name" class="form-control" placeholder="Room Name"></input>
+                <button onclick="addRoom();" class="btn btn-success" id="add-room">Add Room</button>
+            </div>
+            <div id="output"></div>
+            <div>
+            <label>rooms added:</label>
+            <label id="all_rooms"></label>
+            </div>
+            <div>
+                <input type="text" class="form-control" id="send_message" placeholder="send message"></input>
+            <button onclick="send();" class="btn btn-success" id="send-message">send</button>
+            </div>
+        </center>
+    </div>
+    <script src="kwitter_room.js"></script>
+</body>
+</html>
